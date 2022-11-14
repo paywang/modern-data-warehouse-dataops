@@ -17,6 +17,7 @@
 				"frequency": "Hour",
 				"interval": 24,
 				"startTime": "2021-10-01T07:00:00Z",
+				"endTime": "2022-12-03T00:31:47Z",
 				"timeZone": "UTC"
 			}
 		}
