@@ -3,31 +3,26 @@
 	"properties": {
 		"nbformat": 4,
 		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "synspdevsyn",
+			"type": "BigDataPoolReference"
+		},
 		"sessionProperties": {
 			"driverMemory": "28g",
 			"driverCores": 4,
 			"executorMemory": "28g",
 			"executorCores": 4,
 			"numExecutors": 2,
-			"runAsWorkspaceSystemIdentity": false,
-			"conf": {
-				"spark.dynamicAllocation.enabled": "false",
-				"spark.dynamicAllocation.minExecutors": "2",
-				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "333ba1dd-a9fc-4a2f-932f-44d4964b19f6"
-			}
+			"runAsWorkspaceSystemIdentity": false
 		},
 		"metadata": {
-			"saveOutput": true,
-			"enableDebugMode": false,
 			"kernelspec": {
 				"name": "synapse_pyspark",
 				"display_name": "Synapse PySpark"
 			},
 			"language_info": {
 				"name": "python"
-			},
-			"sessionKeepAliveTimeout": 30
+			}
 		},
 		"cells": [
 			{
@@ -39,7 +34,7 @@
 					"import os\n",
 					"import datetime\n",
 					"\n",
-					"# For testing1\n",
+					"# For testing\n",
 					"base_path = 'abfss://datalake@<YOUR_STORAGE_ACCOUNT>.dfs.core.windows.net/data/lnd/2021_XX_XX_X1_XX_XX'\n",
 					"parkingbay_filepath = os.path.join(base_path, \"MelbParkingBayData.json\")\n",
 					"sensors_filepath = os.path.join(base_path, \"MelbParkingSensorData.json\")\n",
@@ -54,10 +49,8 @@
 					"\n",
 					"display(parkingbay_sdf)\n",
 					"display(sensordata_sdf)\n",
-					"display(sensordata_sdf)\n",
-					""
-				],
-				"execution_count": null
+					"display(sensordata_sdf)\n"
+				]
 			}
 		]
 	}
