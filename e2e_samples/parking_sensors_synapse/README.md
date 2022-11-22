@@ -1,5 +1,6 @@
 # DataOps - Parking Sensor (Synapse) <!-- omit in toc -->
 
+
 The sample demonstrate how DevOps principles can be applied to an end to end Data Pipeline Solution built according to the [Modern Data Warehouse (MDW)](https://azure.microsoft.com/en-au/solutions/architecture/modern-data-warehouse/) pattern, implemented in Azure Synapse.
 
 ## Contents <!-- omit in toc -->
